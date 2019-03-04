@@ -1,0 +1,23 @@
+{
+  "name": "mat-javascript-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sstratton/mat-javascript-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sstratton/mat-javascript-course/issues"
+  },
+  "homepage": "https://github.com/sstratton/mat-javascript-course#readme",
+  "devDependencies": {
+    "eslint": "^5.15.0"
+  }
+}
