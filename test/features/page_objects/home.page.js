@@ -7,7 +7,7 @@ var HomePage = function() {
 
     this.productInTableFn = function(product) {
 
-        return element(by.cssContainingText('[role="gridcell"]', product.name))
+        return element(by.cssContainingText('[role="gridcell"]', product.name)) 
     }
 
 };

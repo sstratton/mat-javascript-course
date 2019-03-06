@@ -43,7 +43,7 @@ var Actions = function() {
    * @param  {ElementFinder} element
    * @return {Promise} true if present
    */
-  this.isElementOnPage = async function(element) {
+  this.isElementOnPage = async function(element) { 
     return await browser.isElementPresent(element);
   };
 };
