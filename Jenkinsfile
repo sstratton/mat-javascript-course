@@ -5,6 +5,7 @@ pipeline {
 
     triggers { pollSCM('* * * * *') }
 
+    stages{
     stage ('Install Dependencies') {
         steps {
             bat "npm install"
@@ -29,6 +30,7 @@ pipeline {
             }
         }
 
+    }
     }
 
 }
