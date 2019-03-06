@@ -10,9 +10,10 @@ exports.config = {
 
         package: 'protractor-multiple-cucumber-html-reporter-plugin',
 
-        automaticallyGenerateReport: true,
-
-        removeExistingJsonReportFile: true 
+        options:{
+            automaticallyGenerateReport: true,
+            removeExistingJsonReportFile: true 
+        }
 
     }],
 
@@ -24,7 +25,7 @@ exports.config = {
 
         require: 'features/step_definitions/*steps.js',
         tags: false,
-        format: 'json:results.json',
+        format: 'json:.tmp/results.json',
         profile:false,
         'no-source': true
 

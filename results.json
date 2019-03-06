@@ -1,0 +1,101 @@
+[
+  {
+    "description": "    User Story:\n    As a user...\n\n    Rules (acceptance critera):\n    1. Price - boundaries 1-100 (can't be negative)\n    2. Product names: format is....\n    3. A user must be able to add a product\n    4. Dublicates are not allowed\n\n    Question:\n    1. Is there a search function?\n\n    Glossary:\n    User = an administrator",
+    "keyword": "Feature",
+    "name": "Product Management",
+    "line": 1,
+    "id": "product-management",
+    "tags": [],
+    "uri": "test\\features\\product.feature",
+    "elements": [
+      {
+        "id": "product-management;a-product-is-added",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "A product is added",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\step_definitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "description",
+                      "price"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "carrots",
+                      "orange vegetables",
+                      "10"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "a product doesn't exist",
+            "match": {
+              "location": "test\\features\\step_definitions\\product.steps.js:11"
+            },
+            "result": {
+              "status": "pending",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I add the product",
+            "match": {
+              "location": "test\\features\\step_definitions\\product.steps.js:16"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the product is added",
+            "match": {
+              "location": "test\\features\\step_definitions\\product.steps.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
