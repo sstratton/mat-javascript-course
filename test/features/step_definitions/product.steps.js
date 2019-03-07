@@ -23,11 +23,7 @@ Before(function(){
 Given("a product doesn't exist", function(dataTable) {
   // Convert our data table into an object
   var data = dataTable.hashes();
-
-  [
-    { name: "carrots", description: "orange", price: "10"},
-    { name: "fish", description: "slimy", price: "1"}
-  ]
+  debugger;
 
   // store our object into 
   this.product = data[0];
@@ -38,6 +34,11 @@ Given("a product doesn't exist", function(dataTable) {
 });
 
 When("I add the product", function() {
+
+  // break point
+  debugger;
+  // run 'npm run debug' open 'chrome://inspect/#devices' and click 'inspect'.
+
   actions.click(homePage.addProduct)
   actions.type(addProductPage.productName, this.product.name)
   actions.type(addProductPage.productDescription, this.product.description)
