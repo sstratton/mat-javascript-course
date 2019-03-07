@@ -2,7 +2,7 @@
 
 var World = function World() {
   // empty test data for our product.
-  this.product = undefined;
+  this.product = {};
 
   // function to open browser and go to website
   this.openWebsite = function() {

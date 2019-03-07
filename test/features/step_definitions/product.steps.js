@@ -20,14 +20,17 @@ Before(function(){
     this.openWebsite()
 })
 
+
+Given("a product with name {string} and description {string} and price {string} doesn't exist", function(name, description, price) {
+  // Convert our data table into an object
+  this.product.name = name;
+  this.product.description = description;
+  return this.product.price = price;
+});
+
 Given("a product doesn't exist", function(dataTable) {
   // Convert our data table into an object
   var data = dataTable.hashes();
-
-  [
-    { name: "carrots", description: "orange", price: "10"},
-    { name: "fish", description: "slimy", price: "1"}
-  ]
 
   // store our object into 
   this.product = data[0];
